@@ -1,0 +1,47 @@
+.title {
+  @apply p-6
+  text-center
+  text-gray-800
+  font-bold
+  text-xl;
+}
+
+.nocontent {
+  @apply text-center;
+}
+
+.pair {
+  @apply md:flex
+  md:justify-evenly
+  mb-5;
+}
+
+.button {
+  @apply text-green-600
+   text-3xl
+   py-2.5
+   px-5
+   rounded-md
+   border
+   border-green-800;
+}
+
+.button:hover {
+  @apply hover:bg-green-300
+  hover:text-gray-800;
+}
+
+.button:focus {
+  @apply focus:outline-none;
+}
+
+.checked {
+  @apply text-gray-800
+  bg-green-300
+  text-3xl
+  py-2.5
+  px-5
+  rounded-md
+  border
+  border-green-800;
+}

@@ -1,0 +1,63 @@
+.form {
+  @apply md:flex
+		md:justify-center
+		m-5;
+}
+
+.input {
+  @apply rounded-l-md
+		p-4
+		border-t
+		mr-0
+		border-b
+		border-l
+		text-gray-800
+		border-gray-300
+		bg-white
+		cursor-pointer;
+}
+
+.input:focus {
+  @apply focus:outline-none;
+}
+
+.input.invalid {
+  @apply border-red-300;
+}
+
+.button {
+  @apply px-6
+		rounded-r-md
+		bg-green-300
+		text-gray-800
+		font-bold
+		p-4
+		uppercase
+		border-green-300
+		border-t
+		border-b
+		border-r;
+}
+
+.button:focus {
+  @apply focus:outline-none;
+}
+
+.button:hover {
+  @apply hover:bg-green-400;
+}
+
+.button.invalid {
+  @apply bg-gray-300
+	border-gray-300;
+}
+
+.button.invalid:hover {
+  @apply bg-gray-300
+	border-gray-300;
+}
+
+.error {
+  @apply text-red-600
+	text-center;
+}

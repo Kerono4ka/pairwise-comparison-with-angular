@@ -1,0 +1,21 @@
+<h1 class="header">{{ headerTitle }}</h1>
+<div class="main-container">
+  <div class="col-span-1">
+    <app-input-form
+      (itemAdded)="onItemAdded($event)"
+      [titles]="titles"
+    ></app-input-form>
+    <app-comparison-table
+      [titles]="titles"
+      [relationMatrix]="relationMatrix"
+      (changedRelationMatrix)="onChangedRelationMatrix($event)"
+    ></app-comparison-table>
+  </div>
+  <div class="col-span-2">
+    <app-score-table
+      [titles]="titles"
+      [relationMatrix]="relationMatrix"
+      (deletedItem)="onItemDeleted($event)"
+    ></app-score-table>
+  </div>
+</div>

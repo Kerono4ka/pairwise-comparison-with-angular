@@ -1,0 +1,14 @@
+.header {
+  @apply p-6
+    bg-green-300
+    text-center
+    text-gray-800
+    font-bold
+    text-2xl;
+}
+
+.main-container {
+  @apply grid 
+  grid-cols-3 
+  gap-4;
+}

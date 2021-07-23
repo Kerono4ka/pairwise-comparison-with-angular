@@ -1,0 +1,18 @@
+<div>
+  <form class="form" (submit)="onAddComparisonItem($event, newItemInput)">
+    <div>
+      <input
+        class="input"
+        [ngClass]="{ invalid: !isItemInputValid }"
+        placeholder="New item"
+        type="text"
+        (input)="onInputChange(newItemInput.value)"
+        #newItemInput
+      />
+      <button class="button" [ngClass]="{ invalid: !isItemInputValid }">
+        Add
+      </button>
+      <div class="error">{{ errorText }}</div>
+    </div>
+  </form>
+</div>

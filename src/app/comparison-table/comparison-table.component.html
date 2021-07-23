@@ -1,0 +1,20 @@
+<div>
+  <h2 class="title">Compare items</h2>
+  <div class="nocontent" *ngIf="titles.length < 2; else hasContent">
+    There's nothing to compare yet :)
+  </div>
+
+  <ng-template #hasContent>
+    <div class="pair" *ngFor="let pair of comparisonPairs">
+      <button
+        *ngFor="let btn of pair"
+        [id]="btn.id"
+        type="button"
+        [ngClass]="relationMatrix[btn.row][btn.column] ? 'checked' : 'button'"
+        (click)="onRelationChange($event)"
+      >
+        {{ btn.title }}
+      </button>
+    </div>
+  </ng-template>
+</div>
